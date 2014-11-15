@@ -20,7 +20,20 @@ var getBoardsCard = function(board) {
         data.forEach(function(column) {
             console.log(column.name);
             column.cards.forEach(function(card) {
-                console.log('   ' + card.name);
+                var result = [];
+                result.push('   ');
+                result.push(card.idShort);
+                result.push(' - ');
+                result.push(card.name);
+                result.push(' (');
+                result.push(card.dateLastActivity);
+                result.push(') [');
+                card.labels.forEach(function(label) {
+                    result.push(label.name + ',');
+                });
+                result.push('] ');
+                //result.push(card.url);
+                console.log(result.join(''));
             });
         });
     });
