@@ -4,7 +4,8 @@
   "description": "Simple trello cards extraction",
   "main": "app.js",
   "dependencies": {
-    "node-trello": "~1.0.1"
+    "node-trello": "~1.0.1",
+    "prompt": "~0.2.14"
   },
   "devDependencies": {},
   "author": "Armaklan",
