@@ -1,0 +1,12 @@
+{
+  "name": "trello-extract",
+  "version": "0.0.1",
+  "description": "Simple trello cards extraction",
+  "main": "app.js",
+  "dependencies": {
+    "node-trello": "~1.0.1"
+  },
+  "devDependencies": {},
+  "author": "Armaklan",
+  "license": "MIT"
+}
